@@ -9,14 +9,19 @@ body{
     line-height: 1.5    /*Adds space between lines of text (1.5 Multiplier)*/
 }
 
-/* body.dark {
+.dark{
+    background-color: #333; 
+    color: #ffffff;
+}
+
+body.dark .everything{
     background-color: #333; 
     color: #ffffff;
 }
 
 .dark h2{
     color:#4F9ACF;
-} */
+}
 
 h1, h2{
     text-align: center;
