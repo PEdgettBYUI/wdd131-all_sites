@@ -1,0 +1,51 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.content{
+    margin: 0 auto; /*Boundries of the text; 0 for top and bottom, auto figures out even spacing*/
+    width: 600px;
+    line-height: 1.5    /*Adds space between lines of text (1.5 Multiplier)*/
+}
+
+.dark{
+    background-color: #333; 
+    color: #ffffff;
+}
+
+body.dark .everything{
+    background-color: #333; 
+    color: #ffffff;
+}
+
+.dark h2{
+    color:#4F9ACF;
+}
+
+h1, h2{
+    text-align: center;
+    letter-spacing: 2px; /*Space between letters*/
+    text-transform: uppercase;  /*Can change the Casing of the text*/
+
+}
+
+h2{
+    font-size: 18px;
+    color: #006EB6;
+}
+
+p{
+    text-align: left;
+}
+
+.logo{
+    
+    width: 150px;
+    height: auto;   /*automatically adjust the height based on the width to preserve the aspect ratio*/
+
+    margin-top: 100px;
+    position: relative;
+    left: 50%; /* Horizontally centers */
+    transform: translate(-50%, -50%); /*Adjusts the position back to true center */
+}
