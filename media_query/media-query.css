@@ -6,32 +6,47 @@ body {
 }
 
 main {
-    grid-template-columns: 1rem;
+    grid-template-columns: 1fr 1fr;
 
 }
 
 main section {
-    padding: 20px;
+    padding: 10px;
     background-color: white;
 }
+
+header {
+    /* Instruction in Step 3, Part 6 state to do the below, but that does not replicate the example image */
+    /* background-color: black;
+     color: white; */
+    background-color: paleturquoise;
+    color: black;
+}
+
+/* h1 {
+    background-color: paleturquoise;
+    margin: 1rem auto;
+} */
+
 
 header, main, footer {
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px solid #bbb;
+    /* border: 2px solid blue; */
     padding: 1rem;
-    background-color: #e6f2ff;
+    /* background-color: #e6f2ff; */
 }
 
-section {
+section, footer {
     padding: 20px;
-    background-color: white;
+    /* background-color: white; */
+    border: 10px solid paleturquoise;
 }
 
 /* Media query for screens 500px and wider */
 @media screen and (min-width: 500px) {
     body {
-        background-color: lightgray;
+        /* background-color: lightgray; */
     }
 
     main {
