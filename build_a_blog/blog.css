@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+    --primary-color: #EFC69B;
+    --secondary-color: #AF1B3F;
+    --accent-color: #473144;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Helvetica, Arial, sans-serif;
+    --secondary-font: Lora, Impact, serif;
+}
+
+nav a{
+    
+}
