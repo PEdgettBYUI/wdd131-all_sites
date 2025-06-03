@@ -25,3 +25,24 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
+
+const container = document.querySelector('.grid-container');
+
+articles.forEach(article => {
+    container.innerHTML += `
+        <section class="article">
+            <div class="meta">
+                <p>${article.date}</p>
+                <p>Ages: ${article.ages}</p>
+                <p>Genre: ${article.genre}</p>
+                <p>Rating: ${article.stars}</p>
+            </div>
+            <div class="content">
+                <h2>${article.title}</h2>
+                <img src="${article.imgSrc}" alt="${article.imgAlt}">
+                <p>${article.description}</p>
+            </div>
+
+        </section>
+    `;
+});

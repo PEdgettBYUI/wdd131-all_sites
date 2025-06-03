@@ -9,6 +9,76 @@
     --secondary-font: Lora, Impact, serif;
 }
 
-nav a{
-    
+.main-nav a {
+    color: var(--secondary-color);
 }
+
+p {
+    color: var(--text-dark)
+}
+
+/* blog.css */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+}
+
+/* Left Column (meta) */
+.meta p {
+    margin: 0.5em 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Middle Column (content) */
+.content h2 {
+    margin-top: 0;
+}
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Right Column (filters) */
+.filters {
+    background: #f9f9f9;
+    padding: 0.5rem;
+    border-left: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .article {
+        grid-template-columns: 1fr;
+    }
+    .filters {
+        border-left: none;
+        border-top: 1px solid #ccc;
+        margin-top: 1rem;
+    }
+}
+
+
+/* TEST Review Container Styling */
+/* #review-container article {
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 1rem;
+}
+
+#review-container img {
+	max-width: 200px;
+} */
