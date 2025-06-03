@@ -46,7 +46,7 @@ p {
 
 .article {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 1rem;
     align-items: stretch;
     padding: 1rem;
@@ -71,8 +71,11 @@ p {
     margin-top: 0;
 }
 .content img {
+    display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
+    max-width: 100%;
     margin-bottom: 0;
 }
 
