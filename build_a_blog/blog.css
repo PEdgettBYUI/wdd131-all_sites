@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 :root {
-    --primary-color: #EFC69B;
-    --secondary-color: #AF1B3F;
+    --primary-color: #AF1B3F;
+    --border-color: #EFC69B;
     --accent-color: #473144;
     --text-dark: #333;
     --text-light: #ebebeb;
@@ -9,9 +9,26 @@
     --secondary-font: Lora, Impact, serif;
 }
 
-.main-nav a {
-    color: var(--secondary-color);
+header h1 {
+    text-align: center;
 }
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem 4rem;
+    margin: 0 auto;
+
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.main-nav a {
+    color: var(--primary-color);
+}
+
 
 p {
     color: var(--text-dark)
@@ -21,8 +38,9 @@ p {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr 1fr; /* Main content (articles) and sidebar (filters) */
     gap: 2rem;
+    align-items: stretch;   /* Ensure children stretch to equal height */
     padding: 1rem;
 }
 
@@ -30,34 +48,43 @@ p {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 1rem;
-    align-items: start;
+    align-items: stretch;
     padding: 1rem;
-    /* border: 1px solid #ccc; */
-    border-radius: 8px;
 }
 
 /* Left Column (meta) */
+.meta {
+    border-right: 2px solid var(--border-color);
+    padding-right: 1rem;
+}
+
 .meta p {
     margin: 0.5em 0;
     font-size: 0.95em;
-    color: #555;
+    color: var(--accent-color);
+    text-align: right;
 }
 
 /* Middle Column (content) */
 .content h2 {
+    color: var(--primary-color);
     margin-top: 0;
 }
 .content img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 /* Right Column (filters) */
 .filters {
+    height: 100vh;
+    position: sticky;
+    top: 1rem;
+    align-self: start;
     background: #f9f9f9;
     padding: 0.5rem;
-    border-left: 1px solid #ccc;
+    border: 2px solid var(--border-color);
 }
 
 @media (max-width: 768px) {
@@ -70,15 +97,3 @@ p {
         margin-top: 1rem;
     }
 }
-
-
-/* TEST Review Container Styling */
-/* #review-container article {
-	margin-bottom: 2rem;
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 1rem;
-}
-
-#review-container img {
-	max-width: 200px;
-} */
